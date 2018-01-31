@@ -29,12 +29,12 @@ gulp.task('tpl', function () {
 });
 
 gulp.task('clean', function () {
-    return runSequence(['scss/clean', 'tpl/clean']);
+    return runSequence(['scss/clean']);
 });
 
-gulp.task('tpl/clean', function () {
-    return del('./build/*.html');
-});
+// gulp.task('tpl/clean', function () {
+//     return del('./build/*.html');
+// });
 
 /* Build the project */
 gulp.task('build', ['clean'], function () {
@@ -44,7 +44,7 @@ gulp.task('build', ['clean'], function () {
 gulp.task('serve', function () {
     browserSync.init({
         server: {
-            baseDir: './build'
+            baseDir: './'
         },
         open: false
     });

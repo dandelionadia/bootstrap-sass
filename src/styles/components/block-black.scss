@@ -1,0 +1,14 @@
+.block {
+  &__background {
+    background-color: #2D2323;
+    text-align: center;
+    padding: 30px;
+  }
+  &__content {}
+
+  &__heading {
+    color: $color-white;
+    padding-bottom: 15px;
+  }
+  
+}

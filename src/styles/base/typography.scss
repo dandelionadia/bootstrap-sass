@@ -4,11 +4,9 @@ body {
     font-size: $font-size-base;
     font-family: $font-family, Arial, Helvetica, sans-serif;
 }
-
 h1,
 h2,
-h3,
-h4 {
+h3 {
     color: $color-black;
 }
 
@@ -16,7 +14,7 @@ h1, h3, menu {
     text-transform: uppercase;
 }
 
-h2, h4 {
+h2 {
     font-family: $font-family-serif;
     text-transform: capitalize;
 }

@@ -10,12 +10,14 @@ h3 {
     color: $color-black;
 }
 
-h1, h3, menu {
+h1, h3 {
+    // всі літери з великої
     text-transform: uppercase;
 }
 
 h2 {
     font-family: $font-family-serif;
+    // всі перші літери кожного слова з веилкої
     text-transform: capitalize;
 }
 

@@ -1,0 +1,36 @@
+.hat {
+  background-image: url('../../src/images/2.png');
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 70;
+    // background-color: rgba(119, 105, 87, 0.4);
+    z-index: -1;
+    background-color: transparentize(#776957 /*#A9B2D2*/, .4);    
+  }
+  
+  &__information {
+    text-align: center;
+    color: $color-white;
+  }
+
+  &__heading {
+    color: $color-white;
+  }
+
+  &__text {
+    border-bottom: 1px solid $color-white;
+    border-top: 1px solid $color-white;
+  }
+}

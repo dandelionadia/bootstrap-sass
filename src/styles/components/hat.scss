@@ -22,15 +22,25 @@
   
   &__information {
     text-align: center;
-    color: $color-white;
+    color: rgb(245, 240, 240);
   }
 
   &__heading {
     color: $color-white;
   }
-
+  
   &__text {
-    border-bottom: 1px solid $color-white;
-    border-top: 1px solid $color-white;
+    border-bottom: 2px solid $color-white;
+    border-top: 2px solid $color-white;
+    margin-bottom: 0;
+    padding: 5px;
+    // обмежувать блок в лінії скільки скільки займає текст, не на всю ширину рядка.
+    display: inline-block;
   }
+
+  &__eye {
+    display: flex;
+    justify-content: center;  
+  }
+
 }

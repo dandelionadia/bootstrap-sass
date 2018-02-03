@@ -27,7 +27,7 @@ gulp.task('clean', function () {
 
 /* Build the project */
 gulp.task('build', ['clean'], function () {
-    return runSequence(['scss', 'tpl']);
+    return runSequence(['scss']);
 });
 
 gulp.task('serve', function () {

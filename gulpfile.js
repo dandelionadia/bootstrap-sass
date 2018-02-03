@@ -21,20 +21,9 @@ gulp.task('scss/clean', function () {
     return del('./build/css');
 });
 
-gulp.task('tpl', function () {
-    gulp.src('./src/templates/*.njk')
-        .pipe(nunjucks.compile())
-        .pipe(rename(file => file.extname = '.html'))
-        .pipe(gulp.dest('./build'));
-});
-
 gulp.task('clean', function () {
     return runSequence(['scss/clean']);
 });
-
-// gulp.task('tpl/clean', function () {
-//     return del('./build/*.html');
-// });
 
 /* Build the project */
 gulp.task('build', ['clean'], function () {
@@ -58,5 +47,4 @@ gulp.task('reload', function (done) {
 /* Default task */
 gulp.task('default', ['build', 'serve'], function () {
     gulp.watch('./src/styles/**/*.scss', ['scss']);
-    gulp.watch('./src/templates/**/*.njk', ['tpl', 'reload']);
 });

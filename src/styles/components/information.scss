@@ -1,0 +1,14 @@
+.information {
+  
+  &__background {
+    background-color: #2D2323;
+    text-align: center;
+    padding: 30px;
+  }
+
+  &__heading {
+    color: $color-white;
+    padding-bottom: 15px;
+  }
+  
+}

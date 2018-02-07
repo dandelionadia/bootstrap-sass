@@ -1,0 +1,25 @@
+body {
+    background-color: $color-gray-light;
+    color: $color-gray;
+    font-size: $font-size-base;
+    font-family: $font-family, Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    color: $color-black;
+}
+
+h1, h3 {
+    // всі літери з великої
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: $font-family-serif;
+    // всі перші літери кожного слова з веилкої
+    text-transform: capitalize;
+}
+
+
